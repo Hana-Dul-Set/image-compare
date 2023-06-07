@@ -3,6 +3,7 @@ from compare_utils import *
 
 """
 pip install pillow
+pip install tqdm
 """
 
 ## 이미지 파일이 있는 경로 입력(맨 뒤에 '/' 필수 입력) ex) './image/'
