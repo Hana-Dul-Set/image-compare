@@ -24,6 +24,8 @@ def delete_duplicated_images(IMAGE_DIR_PATH):
     if not os.path.isdir('./removed_image'):
         os.mkdir('removed_image')
     for image_path in duplcated_image_path_list:
+        if not os.path.isfile(image_path):
+            continue
         shutil.copyfile(image_path, './removed_image/' + image_path.split('/')[-1])
         delete_file(image_path)
     return
