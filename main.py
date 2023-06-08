@@ -1,8 +1,6 @@
 from write_data_utils import *
 from compare_utils import *
-
 from delete_utils import *
-import os
 
 """
 pip install pillow
